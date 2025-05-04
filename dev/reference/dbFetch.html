@@ -55,7 +55,7 @@ sparklyr::dbFetch("DBISparkResult", "ANY")
 
     <a class="navbar-brand me-2" href="../index.html">DBI</a>
 
-    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="In-development version">1.2.3.9027</small>
+    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="In-development version">1.2.3.9028</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -98,8 +98,8 @@ as a data.frame.</p>
 <li><p><code>odbc::dbFetch("OdbcResult", "ANY")</code></p></li>
 <li><p><code>RAthena::dbFetch("AthenaResult", "ANY")</code></p></li>
 <li><p><code>RMariaDB::dbFetch("MariaDBResult", "ANY")</code></p></li>
-<li><p><code><a href="https://rdrr.io/pkg/RMySQL/man/query.html" class="external-link">RMySQL::dbFetch("MySQLResult", "missing")</a></code></p></li>
-<li><p><code><a href="https://rdrr.io/pkg/RMySQL/man/query.html" class="external-link">RMySQL::dbFetch("MySQLResult", "numeric")</a></code></p></li>
+<li><p><code><a href="https://r-dbi.r-universe.dev/RMySQL/reference/query.html" class="external-link">RMySQL::dbFetch("MySQLResult", "missing")</a></code></p></li>
+<li><p><code><a href="https://r-dbi.r-universe.dev/RMySQL/reference/query.html" class="external-link">RMySQL::dbFetch("MySQLResult", "numeric")</a></code></p></li>
 <li><p><code>RPostgres::dbFetch("PqResult", "ANY")</code></p></li>
 <li><p><code><a href="https://rdrr.io/pkg/RPresto/man/PrestoResult-class.html" class="external-link">RPresto::dbFetch("PrestoResult", "missing")</a></code></p></li>
 <li><p><code><a href="https://rdrr.io/pkg/RPresto/man/PrestoResult-class.html" class="external-link">RPresto::dbFetch("PrestoResult", "numeric")</a></code></p></li>
@@ -247,9 +247,9 @@ with NA for SQL <code>NULL</code> values
 with NA for SQL <code>NULL</code> values
 (also applies to the return value of the SQL function <code>current_timestamp</code>)</p></li>
 </ul><p>If dates and timestamps are supported by the backend, the following R types are
-used:</p><ul><li><p>lubridate::Date for dates
+used:</p><ul><li><p><a href="https://rdrr.io/r/base/Dates.html" class="external-link">Date</a> for dates
 (also applies to the return value of the SQL function <code>current_date</code>)</p></li>
-<li><p>lubridate::POSIXct for timestamps
+<li><p><a href="https://rdrr.io/r/base/DateTimeClasses.html" class="external-link">POSIXct</a> for timestamps
 (also applies to the return value of the SQL function <code>current_timestamp</code>)</p></li>
 </ul><p>R has no built-in type with lossless support for the full range of 64-bit
 or larger integers. If 64-bit integers are returned from a query,
@@ -339,7 +339,7 @@ finish retrieving the records you want.</p>
 </div>
 
 <div class="pkgdown-footer-right">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.1.9000.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.2.9000.</p>
 </div>
 
     </footer></div>
