@@ -10,7 +10,8 @@ the "The command execution flow" section.
 Methods in other packagesThis documentation page describes the generics. Refer to the documentation pages linked below for the documentation for the methods that are implemented in various backend packages.
 AzureKusto::dbExecute("AzureKustoConnection", "character")
 bigrquery::dbExecute("BigQueryConnection", "character")
-DatabaseConnector::dbExecute("DatabaseConnectorConnection", "character")
+DatabaseConnector::dbExecute("DatabaseConnectorDbiConnection", "character")
+DatabaseConnector::dbExecute("DatabaseConnectorJdbcConnection", "character")
 implyr::dbExecute("src_impala", "character")
 odbc::dbExecute("OdbcConnection", "character")
 pool::dbExecute("Pool", "ANY")
@@ -28,7 +29,8 @@ the "The command execution flow" section.
 Methods in other packagesThis documentation page describes the generics. Refer to the documentation pages linked below for the documentation for the methods that are implemented in various backend packages.
 AzureKusto::dbExecute("AzureKustoConnection", "character")
 bigrquery::dbExecute("BigQueryConnection", "character")
-DatabaseConnector::dbExecute("DatabaseConnectorConnection", "character")
+DatabaseConnector::dbExecute("DatabaseConnectorDbiConnection", "character")
+DatabaseConnector::dbExecute("DatabaseConnectorJdbcConnection", "character")
 implyr::dbExecute("src_impala", "character")
 odbc::dbExecute("OdbcConnection", "character")
 pool::dbExecute("Pool", "ANY")
@@ -82,11 +84,12 @@ the "The command execution flow" section.</p>
 <p></p><div class="section">
 <h3 id="methods-in-other-packages">Methods in other packages<a class="anchor" aria-label="anchor" href="#methods-in-other-packages"></a></h3><p>This documentation page describes the generics. Refer to the documentation pages linked below for the documentation for the methods that are implemented in various backend packages.</p><ul><li><p><code><a href="https://rdrr.io/pkg/AzureKusto/man/DBI_query.html" class="external-link">AzureKusto::dbExecute("AzureKustoConnection", "character")</a></code></p></li>
 <li><p><code><a href="https://bigrquery.r-dbi.org/reference/DBI.html" class="external-link">bigrquery::dbExecute("BigQueryConnection", "character")</a></code></p></li>
-<li><p><code><a href="https://ohdsi.github.io/DatabaseConnector/reference/dbExecute-DatabaseConnectorConnection-character-method.html" class="external-link">DatabaseConnector::dbExecute("DatabaseConnectorConnection", "character")</a></code></p></li>
+<li><p><code><a href="https://ohdsi.github.io/DatabaseConnector/reference/dbExecute-DatabaseConnectorDbiConnection-character-method.html" class="external-link">DatabaseConnector::dbExecute("DatabaseConnectorDbiConnection", "character")</a></code></p></li>
+<li><p><code><a href="https://ohdsi.github.io/DatabaseConnector/reference/dbExecute-DatabaseConnectorJdbcConnection-character-method.html" class="external-link">DatabaseConnector::dbExecute("DatabaseConnectorJdbcConnection", "character")</a></code></p></li>
 <li><p><code><a href="https://rdrr.io/pkg/implyr/man/dbExecute-src_impala-character-method.html" class="external-link">implyr::dbExecute("src_impala", "character")</a></code></p></li>
 <li><p><code><a href="https://odbc.r-dbi.org/reference/OdbcConnection.html" class="external-link">odbc::dbExecute("OdbcConnection", "character")</a></code></p></li>
 <li><p><code><a href="http://rstudio.github.io/pool/reference/DBI-wrap.html" class="external-link">pool::dbExecute("Pool", "ANY")</a></code></p></li>
-<li><p><code><a href="https://rdrr.io/pkg/RAthena/man/Query.html" class="external-link">RAthena::dbExecute("AthenaConnection", "character")</a></code></p></li>
+<li><p><code><a href="https://dyfanjones.github.io/RAthena/reference/AthenaConnection.html" class="external-link">RAthena::dbExecute("AthenaConnection", "character")</a></code></p></li>
 <li><p><code>sparklyr::dbExecute("spark_connection", "ANY")</code></p></li>
 </ul></div>
     </div>
@@ -202,38 +205,38 @@ the backend tries <code>immediate = TRUE</code> (and gives a message)</p></li>
     <div class="dont-index"><p>For queries: <code><a href="dbSendQuery.html">dbSendQuery()</a></code> and <code><a href="dbGetQuery.html">dbGetQuery()</a></code>.</p>
 <p>Other DBIConnection generics:
 <code><a href="DBIConnection-class.html">DBIConnection-class</a></code>,
-<code><a href="dbAppendTable.html">dbAppendTable</a>()</code>,
-<code><a href="dbAppendTableArrow.html">dbAppendTableArrow</a>()</code>,
-<code><a href="dbCreateTable.html">dbCreateTable</a>()</code>,
-<code><a href="dbCreateTableArrow.html">dbCreateTableArrow</a>()</code>,
-<code><a href="dbDataType.html">dbDataType</a>()</code>,
-<code><a href="dbDisconnect.html">dbDisconnect</a>()</code>,
-<code><a href="dbExistsTable.html">dbExistsTable</a>()</code>,
-<code><a href="dbGetException.html">dbGetException</a>()</code>,
-<code><a href="dbGetInfo.html">dbGetInfo</a>()</code>,
-<code><a href="dbGetQuery.html">dbGetQuery</a>()</code>,
-<code><a href="dbGetQueryArrow.html">dbGetQueryArrow</a>()</code>,
-<code><a href="dbIsReadOnly.html">dbIsReadOnly</a>()</code>,
-<code><a href="dbIsValid.html">dbIsValid</a>()</code>,
-<code><a href="dbListFields.html">dbListFields</a>()</code>,
-<code><a href="dbListObjects.html">dbListObjects</a>()</code>,
-<code><a href="dbListResults.html">dbListResults</a>()</code>,
-<code><a href="dbListTables.html">dbListTables</a>()</code>,
-<code><a href="dbQuoteIdentifier.html">dbQuoteIdentifier</a>()</code>,
-<code><a href="dbReadTable.html">dbReadTable</a>()</code>,
-<code><a href="dbReadTableArrow.html">dbReadTableArrow</a>()</code>,
-<code><a href="dbRemoveTable.html">dbRemoveTable</a>()</code>,
-<code><a href="dbSendQuery.html">dbSendQuery</a>()</code>,
-<code><a href="dbSendQueryArrow.html">dbSendQueryArrow</a>()</code>,
-<code><a href="dbSendStatement.html">dbSendStatement</a>()</code>,
-<code><a href="dbUnquoteIdentifier.html">dbUnquoteIdentifier</a>()</code>,
-<code><a href="dbWriteTable.html">dbWriteTable</a>()</code>,
-<code><a href="dbWriteTableArrow.html">dbWriteTableArrow</a>()</code></p>
+<code><a href="dbAppendTable.html">dbAppendTable()</a></code>,
+<code><a href="dbAppendTableArrow.html">dbAppendTableArrow()</a></code>,
+<code><a href="dbCreateTable.html">dbCreateTable()</a></code>,
+<code><a href="dbCreateTableArrow.html">dbCreateTableArrow()</a></code>,
+<code><a href="dbDataType.html">dbDataType()</a></code>,
+<code><a href="dbDisconnect.html">dbDisconnect()</a></code>,
+<code><a href="dbExistsTable.html">dbExistsTable()</a></code>,
+<code><a href="dbGetException.html">dbGetException()</a></code>,
+<code><a href="dbGetInfo.html">dbGetInfo()</a></code>,
+<code><a href="dbGetQuery.html">dbGetQuery()</a></code>,
+<code><a href="dbGetQueryArrow.html">dbGetQueryArrow()</a></code>,
+<code><a href="dbIsReadOnly.html">dbIsReadOnly()</a></code>,
+<code><a href="dbIsValid.html">dbIsValid()</a></code>,
+<code><a href="dbListFields.html">dbListFields()</a></code>,
+<code><a href="dbListObjects.html">dbListObjects()</a></code>,
+<code><a href="dbListResults.html">dbListResults()</a></code>,
+<code><a href="dbListTables.html">dbListTables()</a></code>,
+<code><a href="dbQuoteIdentifier.html">dbQuoteIdentifier()</a></code>,
+<code><a href="dbReadTable.html">dbReadTable()</a></code>,
+<code><a href="dbReadTableArrow.html">dbReadTableArrow()</a></code>,
+<code><a href="dbRemoveTable.html">dbRemoveTable()</a></code>,
+<code><a href="dbSendQuery.html">dbSendQuery()</a></code>,
+<code><a href="dbSendQueryArrow.html">dbSendQueryArrow()</a></code>,
+<code><a href="dbSendStatement.html">dbSendStatement()</a></code>,
+<code><a href="dbUnquoteIdentifier.html">dbUnquoteIdentifier()</a></code>,
+<code><a href="dbWriteTable.html">dbWriteTable()</a></code>,
+<code><a href="dbWriteTableArrow.html">dbWriteTableArrow()</a></code></p>
 <p>Other command execution generics:
-<code><a href="dbBind.html">dbBind</a>()</code>,
-<code><a href="dbClearResult.html">dbClearResult</a>()</code>,
-<code><a href="dbGetRowsAffected.html">dbGetRowsAffected</a>()</code>,
-<code><a href="dbSendStatement.html">dbSendStatement</a>()</code></p></div>
+<code><a href="dbBind.html">dbBind()</a></code>,
+<code><a href="dbClearResult.html">dbClearResult()</a></code>,
+<code><a href="dbGetRowsAffected.html">dbGetRowsAffected()</a></code>,
+<code><a href="dbSendStatement.html">dbSendStatement()</a></code></p></div>
     </div>
 
     <div class="section level2">

@@ -129,9 +129,9 @@ converting row names to a column and specifying SQL data types for fields.</p>
 <li><p><code><a href="https://odbc.r-dbi.org/reference/DBI-tables.html" class="external-link">odbc::dbWriteTable("OdbcConnection", "Id", "data.frame")</a></code></p></li>
 <li><p><code><a href="https://odbc.r-dbi.org/reference/DBI-tables.html" class="external-link">odbc::dbWriteTable("OdbcConnection", "SQL", "data.frame")</a></code></p></li>
 <li><p><code>pool::dbWriteTable("Pool", "ANY", "ANY")</code></p></li>
-<li><p><code><a href="https://rdrr.io/pkg/RAthena/man/AthenaWriteTables.html" class="external-link">RAthena::dbWriteTable("AthenaConnection", "character", "data.frame")</a></code></p></li>
-<li><p><code><a href="https://rdrr.io/pkg/RAthena/man/AthenaWriteTables.html" class="external-link">RAthena::dbWriteTable("AthenaConnection", "Id", "data.frame")</a></code></p></li>
-<li><p><code><a href="https://rdrr.io/pkg/RAthena/man/AthenaWriteTables.html" class="external-link">RAthena::dbWriteTable("AthenaConnection", "SQL", "data.frame")</a></code></p></li>
+<li><p><code><a href="https://dyfanjones.github.io/RAthena/reference/AthenaWriteTables.html" class="external-link">RAthena::dbWriteTable("AthenaConnection", "character", "data.frame")</a></code></p></li>
+<li><p><code><a href="https://dyfanjones.github.io/RAthena/reference/AthenaWriteTables.html" class="external-link">RAthena::dbWriteTable("AthenaConnection", "Id", "data.frame")</a></code></p></li>
+<li><p><code><a href="https://dyfanjones.github.io/RAthena/reference/AthenaWriteTables.html" class="external-link">RAthena::dbWriteTable("AthenaConnection", "SQL", "data.frame")</a></code></p></li>
 <li><p><code><a href="https://rdrr.io/pkg/RH2/man/H2Connection-methods.html" class="external-link">RH2::dbWriteTable("H2Connection", "character", "ANY")</a></code></p></li>
 <li><p><code><a href="https://rdrr.io/pkg/RH2/man/H2Connection-methods.html" class="external-link">RH2::dbWriteTable("H2Connection", "character", "data.frame")</a></code></p></li>
 <li><p><code>RJDBC::dbWriteTable("JDBCConnection", "ANY", "ANY")</code></p></li>
@@ -326,33 +326,33 @@ even if the input data frame only has natural row names.</p></li>
     <h2 id="see-also">See also<a class="anchor" aria-label="anchor" href="#see-also"></a></h2>
     <div class="dont-index"><p>Other DBIConnection generics:
 <code><a href="DBIConnection-class.html">DBIConnection-class</a></code>,
-<code><a href="dbAppendTable.html">dbAppendTable</a>()</code>,
-<code><a href="dbAppendTableArrow.html">dbAppendTableArrow</a>()</code>,
-<code><a href="dbCreateTable.html">dbCreateTable</a>()</code>,
-<code><a href="dbCreateTableArrow.html">dbCreateTableArrow</a>()</code>,
-<code><a href="dbDataType.html">dbDataType</a>()</code>,
-<code><a href="dbDisconnect.html">dbDisconnect</a>()</code>,
-<code><a href="dbExecute.html">dbExecute</a>()</code>,
-<code><a href="dbExistsTable.html">dbExistsTable</a>()</code>,
-<code><a href="dbGetException.html">dbGetException</a>()</code>,
-<code><a href="dbGetInfo.html">dbGetInfo</a>()</code>,
-<code><a href="dbGetQuery.html">dbGetQuery</a>()</code>,
-<code><a href="dbGetQueryArrow.html">dbGetQueryArrow</a>()</code>,
-<code><a href="dbIsReadOnly.html">dbIsReadOnly</a>()</code>,
-<code><a href="dbIsValid.html">dbIsValid</a>()</code>,
-<code><a href="dbListFields.html">dbListFields</a>()</code>,
-<code><a href="dbListObjects.html">dbListObjects</a>()</code>,
-<code><a href="dbListResults.html">dbListResults</a>()</code>,
-<code><a href="dbListTables.html">dbListTables</a>()</code>,
-<code><a href="dbQuoteIdentifier.html">dbQuoteIdentifier</a>()</code>,
-<code><a href="dbReadTable.html">dbReadTable</a>()</code>,
-<code><a href="dbReadTableArrow.html">dbReadTableArrow</a>()</code>,
-<code><a href="dbRemoveTable.html">dbRemoveTable</a>()</code>,
-<code><a href="dbSendQuery.html">dbSendQuery</a>()</code>,
-<code><a href="dbSendQueryArrow.html">dbSendQueryArrow</a>()</code>,
-<code><a href="dbSendStatement.html">dbSendStatement</a>()</code>,
-<code><a href="dbUnquoteIdentifier.html">dbUnquoteIdentifier</a>()</code>,
-<code><a href="dbWriteTableArrow.html">dbWriteTableArrow</a>()</code></p></div>
+<code><a href="dbAppendTable.html">dbAppendTable()</a></code>,
+<code><a href="dbAppendTableArrow.html">dbAppendTableArrow()</a></code>,
+<code><a href="dbCreateTable.html">dbCreateTable()</a></code>,
+<code><a href="dbCreateTableArrow.html">dbCreateTableArrow()</a></code>,
+<code><a href="dbDataType.html">dbDataType()</a></code>,
+<code><a href="dbDisconnect.html">dbDisconnect()</a></code>,
+<code><a href="dbExecute.html">dbExecute()</a></code>,
+<code><a href="dbExistsTable.html">dbExistsTable()</a></code>,
+<code><a href="dbGetException.html">dbGetException()</a></code>,
+<code><a href="dbGetInfo.html">dbGetInfo()</a></code>,
+<code><a href="dbGetQuery.html">dbGetQuery()</a></code>,
+<code><a href="dbGetQueryArrow.html">dbGetQueryArrow()</a></code>,
+<code><a href="dbIsReadOnly.html">dbIsReadOnly()</a></code>,
+<code><a href="dbIsValid.html">dbIsValid()</a></code>,
+<code><a href="dbListFields.html">dbListFields()</a></code>,
+<code><a href="dbListObjects.html">dbListObjects()</a></code>,
+<code><a href="dbListResults.html">dbListResults()</a></code>,
+<code><a href="dbListTables.html">dbListTables()</a></code>,
+<code><a href="dbQuoteIdentifier.html">dbQuoteIdentifier()</a></code>,
+<code><a href="dbReadTable.html">dbReadTable()</a></code>,
+<code><a href="dbReadTableArrow.html">dbReadTableArrow()</a></code>,
+<code><a href="dbRemoveTable.html">dbRemoveTable()</a></code>,
+<code><a href="dbSendQuery.html">dbSendQuery()</a></code>,
+<code><a href="dbSendQueryArrow.html">dbSendQueryArrow()</a></code>,
+<code><a href="dbSendStatement.html">dbSendStatement()</a></code>,
+<code><a href="dbUnquoteIdentifier.html">dbUnquoteIdentifier()</a></code>,
+<code><a href="dbWriteTableArrow.html">dbWriteTableArrow()</a></code></p></div>
     </div>
 
     <div class="section level2">

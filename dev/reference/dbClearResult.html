@@ -99,7 +99,7 @@ This step is mandatory for all objects obtained by calling
 <li><p><code><a href="https://r.duckdb.org/reference/duckdb_result-class.html" class="external-link">duckdb::dbClearResult("duckdb_result")</a></code></p></li>
 <li><p><code><a href="https://hypertidy.github.io/lazysf/reference/SFSQLResult-class.html" class="external-link">lazysf::dbClearResult("SFSQLResult")</a></code></p></li>
 <li><p><code><a href="https://odbc.r-dbi.org/reference/OdbcResult.html" class="external-link">odbc::dbClearResult("OdbcResult")</a></code></p></li>
-<li><p><code><a href="https://rdrr.io/pkg/RAthena/man/dbClearResult.html" class="external-link">RAthena::dbClearResult("AthenaResult")</a></code></p></li>
+<li><p><code><a href="https://dyfanjones.github.io/RAthena/reference/AthenaResult.html" class="external-link">RAthena::dbClearResult("AthenaResult")</a></code></p></li>
 <li><p><code><a href="https://rdrr.io/pkg/RJDBC/man/JDBCResult-methods.html" class="external-link">RJDBC::dbClearResult("JDBCResult")</a></code></p></li>
 <li><p><code><a href="https://rmariadb.r-dbi.org/reference/query.html" class="external-link">RMariaDB::dbClearResult("MariaDBResult")</a></code></p></li>
 <li><p><code><a href="https://r-dbi.r-universe.dev/RMySQL/reference/query.html" class="external-link">RMySQL::dbClearResult("MySQLResult")</a></code></p></li>
@@ -223,40 +223,40 @@ The DBI backend can expect a call to <code>dbClearResult()</code> for each
     <h2 id="see-also">See also<a class="anchor" aria-label="anchor" href="#see-also"></a></h2>
     <div class="dont-index"><p>Other DBIResult generics:
 <code><a href="DBIResult-class.html">DBIResult-class</a></code>,
-<code><a href="dbBind.html">dbBind</a>()</code>,
-<code><a href="dbColumnInfo.html">dbColumnInfo</a>()</code>,
-<code><a href="dbFetch.html">dbFetch</a>()</code>,
-<code><a href="dbGetInfo.html">dbGetInfo</a>()</code>,
-<code><a href="dbGetRowCount.html">dbGetRowCount</a>()</code>,
-<code><a href="dbGetRowsAffected.html">dbGetRowsAffected</a>()</code>,
-<code><a href="dbGetStatement.html">dbGetStatement</a>()</code>,
-<code><a href="dbHasCompleted.html">dbHasCompleted</a>()</code>,
-<code><a href="dbIsReadOnly.html">dbIsReadOnly</a>()</code>,
-<code><a href="dbIsValid.html">dbIsValid</a>()</code>,
-<code><a href="dbQuoteLiteral.html">dbQuoteLiteral</a>()</code>,
-<code><a href="dbQuoteString.html">dbQuoteString</a>()</code></p>
+<code><a href="dbBind.html">dbBind()</a></code>,
+<code><a href="dbColumnInfo.html">dbColumnInfo()</a></code>,
+<code><a href="dbFetch.html">dbFetch()</a></code>,
+<code><a href="dbGetInfo.html">dbGetInfo()</a></code>,
+<code><a href="dbGetRowCount.html">dbGetRowCount()</a></code>,
+<code><a href="dbGetRowsAffected.html">dbGetRowsAffected()</a></code>,
+<code><a href="dbGetStatement.html">dbGetStatement()</a></code>,
+<code><a href="dbHasCompleted.html">dbHasCompleted()</a></code>,
+<code><a href="dbIsReadOnly.html">dbIsReadOnly()</a></code>,
+<code><a href="dbIsValid.html">dbIsValid()</a></code>,
+<code><a href="dbQuoteLiteral.html">dbQuoteLiteral()</a></code>,
+<code><a href="dbQuoteString.html">dbQuoteString()</a></code></p>
 <p>Other DBIResultArrow generics:
 <code><a href="DBIResultArrow-class.html">DBIResultArrow-class</a></code>,
-<code><a href="dbBind.html">dbBind</a>()</code>,
-<code><a href="dbFetchArrow.html">dbFetchArrow</a>()</code>,
-<code><a href="dbFetchArrowChunk.html">dbFetchArrowChunk</a>()</code>,
-<code><a href="dbHasCompleted.html">dbHasCompleted</a>()</code>,
-<code><a href="dbIsValid.html">dbIsValid</a>()</code></p>
+<code><a href="dbBind.html">dbBind()</a></code>,
+<code><a href="dbFetchArrow.html">dbFetchArrow()</a></code>,
+<code><a href="dbFetchArrowChunk.html">dbFetchArrowChunk()</a></code>,
+<code><a href="dbHasCompleted.html">dbHasCompleted()</a></code>,
+<code><a href="dbIsValid.html">dbIsValid()</a></code></p>
 <p>Other data retrieval generics:
-<code><a href="dbBind.html">dbBind</a>()</code>,
-<code><a href="dbFetch.html">dbFetch</a>()</code>,
-<code><a href="dbFetchArrow.html">dbFetchArrow</a>()</code>,
-<code><a href="dbFetchArrowChunk.html">dbFetchArrowChunk</a>()</code>,
-<code><a href="dbGetQuery.html">dbGetQuery</a>()</code>,
-<code><a href="dbGetQueryArrow.html">dbGetQueryArrow</a>()</code>,
-<code><a href="dbHasCompleted.html">dbHasCompleted</a>()</code>,
-<code><a href="dbSendQuery.html">dbSendQuery</a>()</code>,
-<code><a href="dbSendQueryArrow.html">dbSendQueryArrow</a>()</code></p>
+<code><a href="dbBind.html">dbBind()</a></code>,
+<code><a href="dbFetch.html">dbFetch()</a></code>,
+<code><a href="dbFetchArrow.html">dbFetchArrow()</a></code>,
+<code><a href="dbFetchArrowChunk.html">dbFetchArrowChunk()</a></code>,
+<code><a href="dbGetQuery.html">dbGetQuery()</a></code>,
+<code><a href="dbGetQueryArrow.html">dbGetQueryArrow()</a></code>,
+<code><a href="dbHasCompleted.html">dbHasCompleted()</a></code>,
+<code><a href="dbSendQuery.html">dbSendQuery()</a></code>,
+<code><a href="dbSendQueryArrow.html">dbSendQueryArrow()</a></code></p>
 <p>Other command execution generics:
-<code><a href="dbBind.html">dbBind</a>()</code>,
-<code><a href="dbExecute.html">dbExecute</a>()</code>,
-<code><a href="dbGetRowsAffected.html">dbGetRowsAffected</a>()</code>,
-<code><a href="dbSendStatement.html">dbSendStatement</a>()</code></p></div>
+<code><a href="dbBind.html">dbBind()</a></code>,
+<code><a href="dbExecute.html">dbExecute()</a></code>,
+<code><a href="dbGetRowsAffected.html">dbGetRowsAffected()</a></code>,
+<code><a href="dbSendStatement.html">dbSendStatement()</a></code></p></div>
     </div>
 
     <div class="section level2">
