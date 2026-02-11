@@ -1,5 +1,26 @@
 # Changelog
 
+## DBI 1.2.3.9039 (2026-02-11)
+
+### Features
+
+- Add support for OpenTelemetry
+  ([@shikokuchuo](https://github.com/shikokuchuo),
+  [\#551](https://github.com/r-dbi/DBI/issues/551)).
+
+### Chore
+
+- Simplify matching code for otel
+  ([\#569](https://github.com/r-dbi/DBI/issues/569)).
+
+### Documentation
+
+- Add “Supported By Posit” badge to website
+  ([@krlmlr](https://github.com/krlmlr)).
+
+- Render specification with newest pandoc
+  ([\#568](https://github.com/r-dbi/DBI/issues/568)).
+
 ## DBI 1.2.3.9038 (2026-01-14)
 
 ### Continuous integration
