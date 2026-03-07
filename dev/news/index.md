@@ -1,5 +1,12 @@
 # Changelog
 
+## DBI 1.3.0.9001 (2026-03-07)
+
+### Chore
+
+- Auto-update from GitHub Actions
+  ([\#572](https://github.com/r-dbi/DBI/issues/572)).
+
 ## DBI 1.3.0.9000 (2026-02-26)
 
 - Switching to development version.
