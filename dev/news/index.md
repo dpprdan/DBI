@@ -1,5 +1,15 @@
 # Changelog
 
+## DBI 1.3.0.9002 (2026-03-08)
+
+### Chore
+
+- Auto-update from GitHub Actions
+  ([\#575](https://github.com/r-dbi/DBI/issues/575)).
+
+- Auto-update from GitHub Actions
+  ([\#574](https://github.com/r-dbi/DBI/issues/574)).
+
 ## DBI 1.3.0.9001 (2026-03-07)
 
 ### Chore
