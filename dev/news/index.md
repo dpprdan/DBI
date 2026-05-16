@@ -1,5 +1,10 @@
 # Changelog
 
+## DBI 1.3.0.9009 (2026-05-16)
+
+- Ci: Unify fledge.yaml across cynkratemplate and fledge
+  ([\#86](https://github.com/r-dbi/DBI/issues/86)).
+
 ## DBI 1.3.0.9008 (2026-05-13)
 
 ### Chore
